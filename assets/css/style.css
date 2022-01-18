@@ -335,7 +335,7 @@ header{
     top: 100%;
     background-color: var(--white-color);
     border-radius: 5px;
-    z-index: 10;
+    z-index: 100;
 }
 .sub-menu_table{
     padding: 50px 15px 40px 15px;
@@ -392,7 +392,12 @@ header{
     left: 0;
     right: 0;
     border: 2px solid rgba(255,255,255,.1); 
-    animation: stickyDown ease 1s;  
+    animation: stickyDown ease 1s; 
+    z-index: 100;
+
+}
+.header-menu.sticky{
+    z-index: 20;
 }
 
 .sticky .menu-header_link::before,
@@ -535,7 +540,7 @@ header{
 .nivo-controlNav{
     position: relative;
     top: -260px;
-    z-index: 10;
+    z-index: 5;
 }
 .nivo-controlNav a{
     vertical-align: top;
@@ -591,7 +596,7 @@ header{
 .slide-bottom{
     position: absolute;
     width: 100%;
-    z-index: 10;
+    z-index: 5;
     left: 0;
     right: 0;
     bottom: 0;
